@@ -54,7 +54,7 @@ class OrderBookAnalyzer:
 
 # Example usage:
 
-# Define API URL and symbol
+# Define API URL and symbol:
 api_url = "https://api.example.com/order-book"
 symbol = "BTC/USD"
 
