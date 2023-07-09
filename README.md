@@ -16,3 +16,5 @@ __2. Data Analysis:__
  - The ```analyze_order_book_data``` method converts the data to a pandas DataFrame for analysis.
  - The DataFrame is processed to calculate the cumulative sum of quantities for bid and ask sides.
  - Visualizations are generated using ```matplotlib``` to show the order book depth and liquidity.
+
+__Usage:__ To use this code, replace the ```api_url``` variable with the actual API endpoint to fetch order book data for your desired cryptocurrency and trading pair. Additionally, customize the data analysis and visualization steps in the ```analyze_order_book_data``` method based on your specific requirements.
