@@ -7,3 +7,12 @@ pip install requests
 pip install pandas
 pip install matplotlib
 ```
+__1. Data Retrieval:__
+
+ - The ```fetch_order_book_data``` method fetches order book data from the specified API using the ```requests``` library and stores it in the ```self.data``` variable.
+
+__2. Data Analysis:__
+
+ - The ```analyze_order_book_data``` method converts the data to a pandas DataFrame for analysis.
+ - The DataFrame is processed to calculate the cumulative sum of quantities for bid and ask sides.
+ - Visualizations are generated using ```matplotlib``` to show the order book depth and liquidity.
