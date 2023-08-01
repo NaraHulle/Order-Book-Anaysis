@@ -24,7 +24,7 @@ class OrderBookAnalyzer:
         df['price'] = pd.to_numeric(df['price'])
         df['quantity'] = pd.to_numeric(df['quantity'])
 
-        # Calculate cumulative sum of quantities for bid and ask sides
+        # Calculate cumulative sum of quantities for bid and ask sides:
         df['bid_cumulative'] = df[df['quantity'] > 0]['quantity'].cumsum()
         df['ask_cumulative'] = df[df['quantity'] < 0]['quantity'].abs().cumsum()
 
