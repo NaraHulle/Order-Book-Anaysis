@@ -28,7 +28,7 @@ class OrderBookAnalyzer:
         df['bid_cumulative'] = df[df['quantity'] > 0]['quantity'].cumsum()
         df['ask_cumulative'] = df[df['quantity'] < 0]['quantity'].abs().cumsum()
 
-        # Generate visualizations
+        # Generate visualizations:
         self.generate_depth_chart(df)
         self.generate_liquidity_chart(df)
 
