@@ -20,7 +20,7 @@ class OrderBookAnalyzer:
         # Convert data to pandas DataFrame for analysis
         df = pd.DataFrame(self.data, columns=['price', 'quantity'])
 
-        # Convert price and quantity columns to numeric:
+        # Convert price and quantity columns to numeric::
         df['price'] = pd.to_numeric(df['price'])
         df['quantity'] = pd.to_numeric(df['quantity'])
 
